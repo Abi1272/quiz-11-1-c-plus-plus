@@ -1,0 +1,96 @@
+#include<iostream>
+using namespace std;
+int main() {
+
+	int answer;
+
+	cout << ("How awesome was your halloween on a scale 1-10!") << endl;
+	cin >> answer;
+		
+	if (answer < 5)
+		cout << "sorry it wasn't great." << endl;
+	else
+		cout << "I'm glad you had a good holiday!" << endl;
+
+}
+
+
+#include<iostream>
+using namespace std;
+int main() {
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			cout << "*";
+		}
+	cout << endl;
+	}
+}
+
+
+
+#include<iostream>
+using namespace std;
+int main() {
+
+	
+	string halloween;
+	while (halloween != "q") {
+		cout << "Boo!" << endl;
+		cout << "Press q to quit" << endl;
+		cin >> halloween;
+	}
+}
+
+
+
+
+----------------------------------Void-------------------------
+
+#include<iostream>
+using namespace std;
+
+//declaration
+void scary();
+void stars();
+void halloween();
+
+//call
+int main() {
+	scary();
+	stars();
+	halloween();
+}
+
+//definitions
+
+void scary() {
+int answer;
+
+cout << "How awesome was your halloween on a scale 1-10!" << endl;
+cin >> answer;
+
+if (answer < 5)
+	cout << "sorry it wasn't great." << endl;
+else
+	cout << "I'm glad you had a good holiday!" << endl;
+
+}
+
+void stars() {
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			cout << "*";
+		}
+		cout << endl;
+	}
+}
+
+void halloween() {
+	string halloween;
+	while (halloween != "q") {
+		cout << "Boo!" << endl;
+		cout << "Press q to quit" << endl;
+		cin >> halloween;
+	}
+}
